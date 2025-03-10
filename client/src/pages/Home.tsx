@@ -30,10 +30,10 @@ export default function Home() {
             }}
             className="container mx-auto px-4 relative flex flex-col gap-4 items-center justify-center"
           >
-            <h1 className="text-5xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500">
               Hacktivist Labs
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 text-center max-w-2xl mb-8">
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-300 text-center max-w-2xl mb-4 sm:mb-8 px-4">
               Transforming ideas into digital reality with cutting-edge solutions
             </p>
             <div className="relative">
@@ -50,17 +50,17 @@ export default function Home() {
                     Get Started
                   </Button>
                 </DialogTrigger>
-                <DialogContent className="bg-[#09090b] border border-white/20">
+                <DialogContent className="bg-[#09090b] border border-white/20 w-[calc(100%-2rem)] sm:w-full mx-4 sm:mx-0">
                   <div className="flex flex-col gap-2">
                     <DialogHeader>
-                      <DialogTitle className="text-white">Send us a message</DialogTitle>
-                      <DialogDescription className="text-gray-400">
+                      <DialogTitle className="text-white text-xl sm:text-2xl">Send us a message</DialogTitle>
+                      <DialogDescription className="text-gray-400 text-sm sm:text-base">
                         Fill out the form below and we'll get back to you as soon as possible.
                       </DialogDescription>
                     </DialogHeader>
                   </div>
 
-                  <form className="space-y-4">
+                  <form className="space-y-4 mt-2">
                     <div className="space-y-2">
                       <Input 
                         placeholder="Name"
@@ -92,13 +92,13 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <footer className="py-6 bg-[#09090b]">
+      <footer className="py-4 sm:py-6 bg-[#09090b]">
         <div className="container mx-auto px-4 flex flex-col items-center text-center gap-2">
           <div className="flex items-center">
             <Mail className="w-4 h-4 mr-2 text-gray-400" />
-            <span className="text-gray-400">contact@hacktivistlabs.com</span>
+            <span className="text-sm sm:text-base text-gray-400">contact@hacktivistlabs.com</span>
           </div>
-          <p className="text-gray-400">
+          <p className="text-sm sm:text-base text-gray-400">
             © 2024 Hacktivist Labs. All rights reserved.
           </p>
         </div>
