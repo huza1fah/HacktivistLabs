@@ -1,11 +1,18 @@
 import { AuroraBackground } from "@/components/AuroraBackground";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Send, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 import { motion } from "framer-motion";
 import { GlowEffect } from "@/components/ui/glow-effect";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 export default function Home() {
   return (
@@ -50,12 +57,23 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="max-w-md mx-auto"
+            className="max-w-md mx-auto text-center"
           >
-            <h2 className="text-4xl font-bold text-center mb-12 text-white">Get in Touch</h2>
-            <Card className="bg-transparent border border-white/20">
-              <CardContent className="p-6">
-                <form className="space-y-4">
+            <h2 className="text-4xl font-bold text-center mb-8 text-white">Get in Touch</h2>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button className="bg-white text-black hover:bg-white/90">
+                  Contact Us
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="bg-black/95 border border-white/20">
+                <DialogHeader>
+                  <DialogTitle className="text-white">Send us a message</DialogTitle>
+                  <DialogDescription className="text-gray-400">
+                    Fill out the form below and we'll get back to you as soon as possible.
+                  </DialogDescription>
+                </DialogHeader>
+                <form className="space-y-4 mt-4">
                   <div>
                     <Input 
                       placeholder="Name" 
@@ -79,8 +97,8 @@ export default function Home() {
                     Send Message
                   </Button>
                 </form>
-              </CardContent>
-            </Card>
+              </DialogContent>
+            </Dialog>
           </motion.div>
         </div>
       </section>
