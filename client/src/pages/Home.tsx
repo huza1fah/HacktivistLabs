@@ -66,34 +66,32 @@ export default function Home() {
                   Contact Us
                 </Button>
               </DialogTrigger>
-              <DialogContent className="bg-black/95 border border-white/20">
+              <DialogContent>
                 <DialogHeader>
-                  <DialogTitle className="text-white">Send us a message</DialogTitle>
-                  <DialogDescription className="text-gray-400">
+                  <DialogTitle>Send us a message</DialogTitle>
+                  <DialogDescription>
                     Fill out the form below and we'll get back to you as soon as possible.
                   </DialogDescription>
                 </DialogHeader>
-                <form className="space-y-4 mt-4">
+                <form className="space-y-4">
                   <div>
                     <Input 
                       placeholder="Name" 
-                      className="bg-transparent text-white placeholder:text-white/70 border-white/20 focus:border-white"
                     />
                   </div>
                   <div>
                     <Input 
                       type="email" 
                       placeholder="Email" 
-                      className="bg-transparent text-white placeholder:text-white/70 border-white/20 focus:border-white"
                     />
                   </div>
                   <div>
                     <Textarea 
                       placeholder="Message" 
-                      className="min-h-[120px] bg-transparent text-white placeholder:text-white/70 border-white/20 focus:border-white"
+                      className="min-h-[120px]"
                     />
                   </div>
-                  <Button className="w-full bg-white text-black hover:bg-white/90">
+                  <Button className="w-full">
                     Send Message
                   </Button>
                 </form>
