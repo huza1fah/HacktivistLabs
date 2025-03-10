@@ -66,7 +66,7 @@ export default function Home() {
                   Contact Us
                 </Button>
               </DialogTrigger>
-              <DialogContent className="bg-black/95 border border-white/20">
+              <DialogContent className="bg-[#09090b] border border-white/20">
                 <div className="flex flex-col gap-2">
                   <DialogHeader>
                     <DialogTitle className="text-white">Send us a message</DialogTitle>
