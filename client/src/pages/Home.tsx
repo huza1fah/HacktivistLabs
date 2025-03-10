@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Shield, Code, Rocket, Terminal, Send, Mail } from "lucide-react";
 import { motion } from "framer-motion";
+import { GlowEffect } from "@/components/ui/glow-effect";
 
 export default function Home() {
   return (
@@ -28,9 +29,18 @@ export default function Home() {
           <p className="text-xl md:text-2xl text-gray-300 text-center max-w-2xl mb-8">
             Transforming ideas into digital reality with cutting-edge solutions
           </p>
-          <Button size="lg" className="bg-white text-black hover:bg-white/90 dark:bg-black dark:text-white dark:hover:bg-black/90">
-            Get Started
-          </Button>
+          <div className="relative">
+            <GlowEffect
+              colors={["#FF5733", "#33FF57", "#3357FF", "#F1C40F"]}
+              mode="colorShift"
+              blur="soft"
+              duration={3}
+              scale={0.9}
+            />
+            <Button size="lg" className="relative bg-black border border-white/20 text-white hover:bg-black/90">
+              Get Started
+            </Button>
+          </div>
         </motion.div>
       </AuroraBackground>
 
