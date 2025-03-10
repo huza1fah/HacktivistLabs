@@ -50,7 +50,7 @@ export default function Home() {
                     Get Started
                   </Button>
                 </DialogTrigger>
-                <DialogContent className="bg-[#09090b] border border-white/20 w-[calc(100%-2rem)] sm:w-full mx-4 sm:mx-0">
+                <DialogContent className="bg-[#09090b] border border-white/20 w-[calc(100%-2rem)] max-w-lg mx-auto">
                   <div className="flex flex-col gap-2">
                     <DialogHeader>
                       <DialogTitle className="text-white text-xl sm:text-2xl">Send us a message</DialogTitle>
