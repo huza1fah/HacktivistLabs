@@ -16,7 +16,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-[#09090b]">
       {/* Hero Section */}
       <AuroraBackground>
         <motion.div
@@ -51,7 +51,7 @@ export default function Home() {
       </AuroraBackground>
 
       {/* Contact Section */}
-      <section className="py-20 bg-black">
+      <section className="py-20 bg-[#09090b]">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -107,7 +107,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 bg-black">
+      <footer className="py-8 bg-[#09090b]">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400">
