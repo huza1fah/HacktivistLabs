@@ -93,8 +93,7 @@ export default function Home() {
       <footer className="py-8 bg-[#09090b]">
         <div className="container mx-auto px-4 flex flex-col items-center text-center gap-2">
           <div className="flex items-center">
-            <Mail className="w-4 h-4 mr-2 text-gray-400" />
-            <span className="text-gray-400">contact@hacktivistlabs.com</span>
+            <span className="text-gray-400">info@hacktivistlabs.com</span>
           </div>
           <p className="text-gray-400">
             © 2024 Hacktivist Labs. All rights reserved.
