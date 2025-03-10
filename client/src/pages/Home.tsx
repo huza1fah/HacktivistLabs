@@ -91,16 +91,14 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-8 bg-[#09090b]">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400">
-              © 2024 Hacktivist Labs. All rights reserved.
-            </p>
-            <div className="flex items-center mt-4 md:mt-0">
-              <Mail className="w-4 h-4 mr-2 text-gray-400" />
-              <span className="text-gray-400">contact@hacktivistlabs.com</span>
-            </div>
+        <div className="container mx-auto px-4 flex flex-col items-center text-center gap-2">
+          <div className="flex items-center">
+            <Mail className="w-4 h-4 mr-2 text-gray-400" />
+            <span className="text-gray-400">contact@hacktivistlabs.com</span>
           </div>
+          <p className="text-gray-400">
+            © 2024 Hacktivist Labs. All rights reserved.
+          </p>
         </div>
       </footer>
     </div>
