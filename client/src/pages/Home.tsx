@@ -5,55 +5,74 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Shield, Code, Rocket, Terminal, Send, Mail } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <AuroraBackground>
-        <div className="container mx-auto px-4 h-screen flex items-center">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500">
-              Hacktivist Labs
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-8">
-              Transforming ideas into digital reality with cutting-edge solutions
-            </p>
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
-              Get Started
-            </Button>
-          </div>
-        </div>
+        <motion.div
+          initial={{ opacity: 0.0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.3,
+            duration: 0.8,
+            ease: "easeInOut",
+          }}
+          className="container mx-auto px-4 relative flex flex-col gap-4 items-center justify-center"
+        >
+          <h1 className="text-5xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-500">
+            Hacktivist Labs
+          </h1>
+          <p className="text-xl md:text-2xl text-gray-300 text-center max-w-2xl mb-8">
+            Transforming ideas into digital reality with cutting-edge solutions
+          </p>
+          <Button size="lg" className="bg-white text-black hover:bg-white/90 dark:bg-black dark:text-white dark:hover:bg-black/90">
+            Get Started
+          </Button>
+        </motion.div>
       </AuroraBackground>
 
       {/* Services Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12">Our Services</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <ServiceCard
-              icon={<Shield className="w-8 h-8" />}
-              title="Cybersecurity"
-              description="Protect your digital assets with our advanced security solutions"
-            />
-            <ServiceCard
-              icon={<Code className="w-8 h-8" />}
-              title="Web Development"
-              description="Create stunning, responsive websites that drive results"
-            />
-            <ServiceCard
-              icon={<Rocket className="w-8 h-8" />}
-              title="Digital Strategy"
-              description="Strategic planning to accelerate your digital transformation"
-            />
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="text-4xl font-bold text-center mb-12">Our Services</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <ServiceCard
+                icon={<Shield className="w-8 h-8" />}
+                title="Cybersecurity"
+                description="Protect your digital assets with our advanced security solutions"
+              />
+              <ServiceCard
+                icon={<Code className="w-8 h-8" />}
+                title="Web Development"
+                description="Create stunning, responsive websites that drive results"
+              />
+              <ServiceCard
+                icon={<Rocket className="w-8 h-8" />}
+                title="Digital Strategy"
+                description="Strategic planning to accelerate your digital transformation"
+              />
+            </div>
+          </motion.div>
         </div>
       </section>
 
       {/* About Section */}
       <section className="py-20 bg-muted/50">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="max-w-3xl mx-auto text-center"
+          >
             <Terminal className="w-12 h-12 mx-auto mb-6 text-primary" />
             <h2 className="text-4xl font-bold mb-6">About Us</h2>
             <p className="text-lg text-muted-foreground mb-8">
@@ -61,14 +80,19 @@ export default function Home() {
               cybersecurity, web development, and digital transformation. We combine
               technical expertise with creative innovation to deliver exceptional results.
             </p>
-          </div>
+          </motion.div>
         </div>
       </section>
 
       {/* Contact Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-md mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="max-w-md mx-auto"
+          >
             <h2 className="text-4xl font-bold text-center mb-12">Get in Touch</h2>
             <Card>
               <CardContent className="p-6">
@@ -89,7 +113,7 @@ export default function Home() {
                 </form>
               </CardContent>
             </Card>
-          </div>
+          </motion.div>
         </div>
       </section>
 
