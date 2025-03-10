@@ -66,32 +66,37 @@ export default function Home() {
                   Contact Us
                 </Button>
               </DialogTrigger>
-              <DialogContent>
-                <DialogHeader>
-                  <DialogTitle>Send us a message</DialogTitle>
-                  <DialogDescription>
-                    Fill out the form below and we'll get back to you as soon as possible.
-                  </DialogDescription>
-                </DialogHeader>
+              <DialogContent className="bg-black/95 border border-white/20">
+                <div className="flex flex-col gap-2">
+                  <DialogHeader>
+                    <DialogTitle className="text-white">Send us a message</DialogTitle>
+                    <DialogDescription className="text-gray-400">
+                      Fill out the form below and we'll get back to you as soon as possible.
+                    </DialogDescription>
+                  </DialogHeader>
+                </div>
+
                 <form className="space-y-4">
-                  <div>
+                  <div className="space-y-2">
                     <Input 
-                      placeholder="Name" 
+                      placeholder="Name"
+                      className="bg-transparent text-white placeholder:text-white/70 border-white/20 focus:border-white"
                     />
                   </div>
-                  <div>
+                  <div className="space-y-2">
                     <Input 
-                      type="email" 
-                      placeholder="Email" 
+                      type="email"
+                      placeholder="Email"
+                      className="bg-transparent text-white placeholder:text-white/70 border-white/20 focus:border-white"
                     />
                   </div>
-                  <div>
+                  <div className="space-y-2">
                     <Textarea 
-                      placeholder="Message" 
-                      className="min-h-[120px]"
+                      placeholder="Message"
+                      className="min-h-[120px] bg-transparent text-white placeholder:text-white/70 border-white/20 focus:border-white"
                     />
                   </div>
-                  <Button className="w-full">
+                  <Button type="button" className="w-full bg-white text-black hover:bg-white/90">
                     Send Message
                   </Button>
                 </form>
