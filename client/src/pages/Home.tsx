@@ -37,7 +37,7 @@ export default function Home() {
               duration={3}
               scale={0.9}
             />
-            <Button size="lg" className="relative bg-black border border-white/20 text-white hover:bg-black/90">
+            <Button size="lg" className="relative bg-white text-black hover:bg-white/90 border border-white/20">
               Get Started
             </Button>
           </div>
