@@ -43,27 +43,10 @@ export default function Home() {
               duration={3}
               scale={0.9}
             />
-            <Button size="lg" className="relative bg-white text-black hover:bg-white/90 border border-white/20">
-              Get Started
-            </Button>
-          </div>
-        </motion.div>
-      </AuroraBackground>
-
-      {/* Contact Section */}
-      <section className="py-20 bg-[#09090b]">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="max-w-md mx-auto text-center"
-          >
-            <h2 className="text-4xl font-bold text-center mb-8 text-white">Get in Touch</h2>
             <Dialog>
               <DialogTrigger asChild>
-                <Button className="bg-white text-black hover:bg-white/90">
-                  Contact Us
+                <Button size="lg" className="relative bg-white text-black hover:bg-white/90 border border-white/20">
+                  Get Started
                 </Button>
               </DialogTrigger>
               <DialogContent className="bg-[#09090b] border border-white/20">
@@ -102,9 +85,9 @@ export default function Home() {
                 </form>
               </DialogContent>
             </Dialog>
-          </motion.div>
-        </div>
-      </section>
+          </div>
+        </motion.div>
+      </AuroraBackground>
 
       {/* Footer */}
       <footer className="py-8 bg-[#09090b]">
