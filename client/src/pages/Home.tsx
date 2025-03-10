@@ -44,7 +44,7 @@ export default function Home() {
       </AuroraBackground>
 
       {/* Contact Section */}
-      <section className="py-20 bg-background">
+      <section className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -52,20 +52,20 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="max-w-md mx-auto"
           >
-            <h2 className="text-4xl font-bold text-center mb-12">Get in Touch</h2>
-            <Card>
+            <h2 className="text-4xl font-bold text-center mb-12 text-white">Get in Touch</h2>
+            <Card className="bg-white">
               <CardContent className="p-6">
                 <form className="space-y-4">
                   <div>
-                    <Input placeholder="Name" />
+                    <Input placeholder="Name" className="bg-white text-black" />
                   </div>
                   <div>
-                    <Input type="email" placeholder="Email" />
+                    <Input type="email" placeholder="Email" className="bg-white text-black" />
                   </div>
                   <div>
-                    <Textarea placeholder="Message" className="min-h-[120px]" />
+                    <Textarea placeholder="Message" className="min-h-[120px] bg-white text-black" />
                   </div>
-                  <Button className="w-full">
+                  <Button className="w-full bg-black text-white hover:bg-black/90">
                     Send Message
                     <Send className="ml-2 w-4 h-4" />
                   </Button>
@@ -77,15 +77,15 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 bg-muted/50">
+      <footer className="py-8 bg-black">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-muted-foreground">
+            <p className="text-gray-400">
               © 2024 Hacktivist Labs. All rights reserved.
             </p>
             <div className="flex items-center mt-4 md:mt-0">
-              <Mail className="w-4 h-4 mr-2" />
-              <span className="text-muted-foreground">contact@hacktivistlabs.com</span>
+              <Mail className="w-4 h-4 mr-2 text-gray-400" />
+              <span className="text-gray-400">contact@hacktivistlabs.com</span>
             </div>
           </div>
         </div>
