@@ -77,7 +77,6 @@ export default function Home() {
                   </div>
                   <Button className="w-full bg-white text-black hover:bg-white/90">
                     Send Message
-                    <Send className="ml-2 w-4 h-4" />
                   </Button>
                 </form>
               </CardContent>
