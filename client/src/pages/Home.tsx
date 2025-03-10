@@ -53,19 +53,29 @@ export default function Home() {
             className="max-w-md mx-auto"
           >
             <h2 className="text-4xl font-bold text-center mb-12 text-white">Get in Touch</h2>
-            <Card className="bg-white">
+            <Card className="bg-transparent border border-white/20">
               <CardContent className="p-6">
                 <form className="space-y-4">
                   <div>
-                    <Input placeholder="Name" className="bg-white text-black" />
+                    <Input 
+                      placeholder="Name" 
+                      className="bg-transparent text-white placeholder:text-white/70 border-white/20 focus:border-white"
+                    />
                   </div>
                   <div>
-                    <Input type="email" placeholder="Email" className="bg-white text-black" />
+                    <Input 
+                      type="email" 
+                      placeholder="Email" 
+                      className="bg-transparent text-white placeholder:text-white/70 border-white/20 focus:border-white"
+                    />
                   </div>
                   <div>
-                    <Textarea placeholder="Message" className="min-h-[120px] bg-white text-black" />
+                    <Textarea 
+                      placeholder="Message" 
+                      className="min-h-[120px] bg-transparent text-white placeholder:text-white/70 border-white/20 focus:border-white"
+                    />
                   </div>
-                  <Button className="w-full bg-black text-white hover:bg-black/90">
+                  <Button className="w-full bg-white text-black hover:bg-white/90">
                     Send Message
                     <Send className="ml-2 w-4 h-4" />
                   </Button>
