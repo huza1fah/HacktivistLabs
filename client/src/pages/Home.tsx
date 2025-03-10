@@ -1,10 +1,9 @@
 import { AuroraBackground } from "@/components/AuroraBackground";
 import { Button } from "@/components/ui/button";
-import { ServiceCard } from "@/components/ui/services-card";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Shield, Code, Rocket, Terminal, Send, Mail } from "lucide-react";
+import { Send, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 import { GlowEffect } from "@/components/ui/glow-effect";
 
@@ -43,56 +42,6 @@ export default function Home() {
           </div>
         </motion.div>
       </AuroraBackground>
-
-      {/* Services Section */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <h2 className="text-4xl font-bold text-center mb-12">Our Services</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <ServiceCard
-                icon={<Shield className="w-8 h-8" />}
-                title="Cybersecurity"
-                description="Protect your digital assets with our advanced security solutions"
-              />
-              <ServiceCard
-                icon={<Code className="w-8 h-8" />}
-                title="Web Development"
-                description="Create stunning, responsive websites that drive results"
-              />
-              <ServiceCard
-                icon={<Rocket className="w-8 h-8" />}
-                title="Digital Strategy"
-                description="Strategic planning to accelerate your digital transformation"
-              />
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section className="py-20 bg-muted/50">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="max-w-3xl mx-auto text-center"
-          >
-            <Terminal className="w-12 h-12 mx-auto mb-6 text-primary" />
-            <h2 className="text-4xl font-bold mb-6">About Us</h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              Hacktivist Labs is a forward-thinking digital agency specializing in
-              cybersecurity, web development, and digital transformation. We combine
-              technical expertise with creative innovation to deliver exceptional results.
-            </p>
-          </motion.div>
-        </div>
-      </section>
 
       {/* Contact Section */}
       <section className="py-20 bg-background">
